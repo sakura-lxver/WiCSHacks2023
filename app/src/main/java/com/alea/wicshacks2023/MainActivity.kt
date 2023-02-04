@@ -13,13 +13,13 @@ import com.alea.wicshacks2023.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+     binding = ActivityMainBinding.inflate(layoutInflater)
+     setContentView(binding.root)
 
         val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
         val viewPager: ViewPager = binding.viewPager
@@ -27,11 +27,8 @@ class MainActivity : AppCompatActivity() {
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
         tabs.setTabMode(TabLayout.MODE_SCROLLABLE)
-        val fab: FloatingActionButton = binding.fab
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+
+
     }
 }
