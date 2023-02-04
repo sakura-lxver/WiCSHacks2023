@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = sectionsPagerAdapter
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
+        tabs.setTabMode(TabLayout.MODE_SCROLLABLE)
         val fab: FloatingActionButton = binding.fab
 
         fab.setOnClickListener { view ->
