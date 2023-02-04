@@ -1,5 +1,6 @@
 package com.alea.wicshacks2023
 
+import android.graphics.Color
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -27,6 +28,7 @@ private lateinit var binding: ActivityMainBinding
         val tabs: TabLayout = binding.tabs
         tabs.setupWithViewPager(viewPager)
         tabs.setTabMode(TabLayout.MODE_SCROLLABLE)
+        tabs.setTabTextColors(Color.parseColor("#ffffff"), Color.parseColor("#000000"))
 
 
 
