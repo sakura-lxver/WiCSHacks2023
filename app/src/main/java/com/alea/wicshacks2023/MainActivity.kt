@@ -11,6 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.alea.wicshacks2023.ui.main.SectionsPagerAdapter
 import com.alea.wicshacks2023.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
 

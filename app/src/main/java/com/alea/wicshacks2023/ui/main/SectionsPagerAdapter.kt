@@ -1,11 +1,9 @@
 package com.alea.wicshacks2023.ui.main
 
 import android.content.Context
-import android.content.res.Resources
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.alea.wicshacks2023.Home
 import com.alea.wicshacks2023.R
 
 private val TAB_TITLES = arrayOf(
@@ -30,15 +28,14 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     override fun getItem(position: Int): Fragment {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1)
-    }
 
-    fun createFragment(position: Int): Fragment {
-        return when(position) {
-            1 -> { Home() }
-            else -> {throw Resources.NotFoundException("Position Not Found")}
+        return when(position){
+            0 -> {Home()}
+            6 -> {Tracker()}
+            else -> {PlaceholderFragment.newInstance(position+1)}
         }
     }
+
     override fun getPageTitle(position: Int): CharSequence? {
         return context.resources.getString(TAB_TITLES[position])
     }

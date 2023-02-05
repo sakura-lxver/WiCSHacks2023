@@ -11,4 +11,5 @@
     <color name="tabcolor">#FF8686</color>
     <color name="tabactive">#F4B1B9</color>
     <color name="tabindicator">#A47380</color>
+    <color name="backgroundcolor">#C9B385</color>
 </resources>
